@@ -1,0 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ */
+@import "bourbon";
+@import "neat";
+@import "static";
+@import "users";
+
+$main-color: #ff8249;
+
+body {
+	background-color: $main-color;
+	font-family: helvetica, verdana, arial, sans-serif;
+	font-size: 62.5%;
+	padding: 0;
+	margin: 0;
+}
+
+#body {
+	font-size: 1.6em;
+}
+
+h1, h2, h3, h4 {
+	color: #EEE;
+	font-weight: normal;
+}
+
+footer {
+	border-bottom: 20px solid #333;
+}
+
+.main-header {
+	text-align: right;
+}
+
+.welcome {
+	@include outer-container;
+	.home-icon {
+		@include span-columns(4);
+		text-align: right;
+		padding: 2em 0;
+	}
+	.home-info {
+		@include span-columns(8);
+		font-size: 2em;
+		text-transform: uppercase;
+		ol {
+			padding: 0;
+			margin: 0;
+		}
+		img {
+			vertical-align: middle;
+		}
+	}
+}
+
+.welcome-steps {
+	li {
+		display: inline;
+		list-style-type: none;
+	}
+}
+
+.what-it-is-banner {
+	background-color: gray;
+}
+
+.stats-banner {
+	background-color: white;
+
+}
