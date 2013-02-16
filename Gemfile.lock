@@ -52,6 +52,7 @@ GEM
     neat (1.1.0)
       bourbon (>= 2.1)
       sass (>= 3.2)
+    pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.4)
     rack-cache (1.2)
@@ -106,6 +107,7 @@ DEPENDENCIES
   bourbon
   jquery-rails
   neat
+  pg
   rails (= 3.2.11)
   sass-rails (~> 3.2.3)
   sqlite3
