@@ -27,6 +27,7 @@ body {
 
 #body {
 	font-size: 1.6em;
+	border-bottom: 60px solid #333;
 }
 
 h1, h2, h3, h4 {
@@ -34,12 +35,13 @@ h1, h2, h3, h4 {
 	font-weight: normal;
 }
 
-footer {
-	border-bottom: 20px solid #333;
-}
 
 .main-header {
+	@include outer-container;
 	text-align: right;
+	img {
+		vertical-align: middle;
+	}
 }
 
 .welcome {
@@ -70,11 +72,61 @@ footer {
 	}
 }
 
-.what-it-is-banner {
+.what-it-is-container {
 	background-color: gray;
+	margin: 0;
+}
+.what-it-is-banner {
+	@include outer-container;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 1em;
+	margin-bottom: 0;
+	
+}
+
+.stats-container {
+	background-color: white;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	margin: 0;
+	text-align: center;
+
 }
 
 .stats-banner {
-	background-color: white;
+	@include outer-container;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 1em;	
 
 }
+
+.fix-it-container {
+	@include outer-container;
+	text-align: center;
+	.fix-it-p {
+		font-size: 2em;
+	}
+}
+
+
+.fix-it-words {
+	@include span-columns(8);
+	text-align: right;
+	padding-top: 1em;
+	h2 {
+		margin: 0;
+		font-size: 3em; 
+	}
+	p {
+	}
+	text-transform: uppercase;
+}
+.fix-it-logo {
+	@include span-columns(4);
+	text-align: left;
+}
+
