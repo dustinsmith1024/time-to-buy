@@ -1,12 +1,8 @@
-# TimeToBuyUndies.com
-
-This is the next big thing.
-
-http://timetobuyundies.com
+A sample site we played with
 
 # To run
 
-    git checkout git@github.com:dustinsmith1024/time-to-buy-undies.git
-    cd time-to-buy-undies
+    git checkout git@github.com:dustinsmith1024/time-to-buy.git
+    cd time-to-buy
     bundle install
     rails s
